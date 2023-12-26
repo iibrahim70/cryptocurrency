@@ -1,0 +1,19 @@
+{
+  "name": "cryptocurrency",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ibrahim",
+  "license": "ISC",
+  "dependencies": {
+    "alchemy-sdk": "^3.1.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.3.1"
+  }
+}
