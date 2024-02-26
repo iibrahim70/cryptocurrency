@@ -6,14 +6,14 @@ import { Network, Alchemy } from "alchemy-sdk";
 dotenv.config();
 
 const settings = {
-  apiKey: process.env.API_KEY,
+  apiKey: process.env.API_KEY_ALCHEMY,
   network: Network.ETH_MAINNET,
 };
 
 const alchemy = new Alchemy(settings);
 
 // get the latest block
-const latestBlock = alchemy.core.getBlock("latest").then(console.log);
+alchemy.core.getBlock("latest").then(console.log);
 
 class CryptoBlock {
   constructor(index, timestamp, data, precedingHash = "") {
